@@ -19,11 +19,10 @@ class Bus extends Vehicle {
 
     @Override
     public double calculateInsuranceFee() {
-        // Insurance formula for buses: base 5% of price + 1% per year of age + capacity factor
-        int age = getAge(2026); // Using current year
+        int age = getAge(2026);
         double baseFee = getBasePrice() * 0.05;
         double ageFee = getBasePrice() * 0.01 * age;
-        double capacityFee = passengerCapacity * 10; // $10 per passenger capacity
+        double capacityFee = passengerCapacity * 10;
         return baseFee + ageFee + capacityFee;
     }
 
@@ -36,7 +35,7 @@ class Bus extends Vehicle {
 
     @Override
     public int getServiceIntervalKm() {
-        return 15000; // Buses serviced every 15,000 km
+        return 15000;
     }
 
     @Override

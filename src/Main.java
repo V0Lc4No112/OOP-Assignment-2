@@ -2,12 +2,10 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("╔════════════════════════════════════════════════════╗");
-        System.out.println("║   FLEET MANAGEMENT SYSTEM - OOP DEMONSTRATION      ║");
-        System.out.println("║   Object-Oriented Programming Assignment           ║");
-        System.out.println("╚════════════════════════════════════════════════════╝\n");
+        System.out.println("╔══════════════════════════════════════╗");
+        System.out.println("║   FLEET MANAGEMENT SYSTEM - DEMO     ║");
+        System.out.println("╚══════════════════════════════════════╝\n");
 
-        // Choose which demonstration to run
         Scanner scanner = new Scanner(System.in);
         boolean running = true;
 

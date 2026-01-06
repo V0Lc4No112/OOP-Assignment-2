@@ -110,7 +110,6 @@ class FleetApp {
         System.out.println("\n✓ Car added successfully!");
         System.out.println(car);
 
-        // Demonstrate polymorphism
         Serviceable servicable = car;
         System.out.println("Service interval: " + servicable.getServiceIntervalKm() + " km");
     }
@@ -136,7 +135,6 @@ class FleetApp {
         System.out.println("\n✓ Bus added successfully!");
         System.out.println(bus);
 
-        // Demonstrate polymorphism
         Serviceable servicable = bus;
         System.out.println("Service interval: " + servicable.getServiceIntervalKm() + " km");
     }
@@ -201,7 +199,6 @@ class FleetApp {
         System.out.println("Starting service operations...\n");
 
         for (Vehicle vehicle : vehicles) {
-            // Polymorphic behavior - correct performService() is called based on actual type
             if (vehicle instanceof Serviceable) {
                 Serviceable servicable = (Serviceable) vehicle;
                 servicable.performService();
